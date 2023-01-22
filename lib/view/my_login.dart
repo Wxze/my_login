@@ -34,7 +34,7 @@ class _MyLoginViewState extends State<MyLoginView> {
               ),
             ),
             const SizedBox(
-              height: 50,
+              height: 60,
               width: 140,
               child: Divider(
                 color: Colors.black,
