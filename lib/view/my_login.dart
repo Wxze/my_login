@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/default_text_field.dart';
@@ -22,16 +20,25 @@ class _MyLoginViewState extends State<MyLoginView> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.house,
-              color: Colors.greenAccent,
-              size: 100,
+            Icon(
+              Icons.forest,
+              color: Colors.greenAccent.shade400,
+              size: 125,
             ),
             Text(
               'Gabriel\'s Login',
               style: GoogleFonts.josefinSlab(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
+                letterSpacing: 1.5,
+              ),
+            ),
+            const SizedBox(
+              height: 50,
+              width: 140,
+              child: Divider(
+                color: Colors.black,
+                thickness: 1,
               ),
             ),
             const DefaultTextField(
@@ -47,7 +54,7 @@ class _MyLoginViewState extends State<MyLoginView> {
                 Checkbox(
                   value: true,
                   onChanged: (bool? value) {},
-                  activeColor: Colors.greenAccent,
+                  activeColor: Colors.greenAccent.shade400,
                 ),
                 Text(
                   'Remember me',
@@ -64,10 +71,10 @@ class _MyLoginViewState extends State<MyLoginView> {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.greenAccent),
+                        backgroundColor: Colors.greenAccent.shade400),
                     child: Text(
-                      'Login',
-                      style: GoogleFonts.roboto(),
+                      'LOGIN',
+                      style: GoogleFonts.roboto(fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
